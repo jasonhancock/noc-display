@@ -25,7 +25,7 @@ config option to adjust how many elements appear in each column of the
 grid.
 
 You can adjust the width and height of the iframes by changing the
-`frm_width` and frm_height` parameters. The time between transitions can be
+`frm_width` and `frm_height` parameters. The time between transitions can be
 configured with the `frm_delay_ms` parameter. 
 
 Once you have it all configured, point your browser at index.php
