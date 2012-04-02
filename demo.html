@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>NOC Display</title>
+    
+    <link href="css/noc-display.css" rel="stylesheet" />
+
+    <style type="text/css">
+        iframe { 
+            width: 1000px; 
+            height: 700px; 
+            border:none; 
+            text-align: center; 
+        }
+    </style>
+
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+
+</div>
+
+<div id="impress">
+            
+    <div class="step" data-x="0" data-y="0" data-rotate="18">
+        <iframe id="frame0" src="http://weather.com"></iframe>
+    </div>
+            
+    <div class="step" data-x="0" data-y="1200" data-rotate="68">
+        <iframe id="frame1" src="http://cnn.com"></iframe>
+    </div>
+
+    <div class="step" data-x="1600" data-y="0" data-rotate="73">
+        <iframe id="frame2" src="http://slashdot.org"></iframe>
+    </div><div class="step" data-x="800" data-y="1200" data-scale="8"></div>
+</div>
+
+<script src="js/impress.js"></script>
+<script>
+    impress().init();
+
+    var delay = 10000;
+    var frame_count=0;
+    var frames_total=3;
+    setTimeout("advance()", delay);
+
+    function advance() {
+        frame_count++;
+        if(frame_count == frames_total) {
+            frame_count = 0;
+        }
+        var reload_id='frame' + frame_count;
+        document.getElementById(reload_id).src = document.getElementById(reload_id).src;
+        impress().next(); 
+        setTimeout("advance()", delay);
+    }
+</script>
+
+</body>
+</html>

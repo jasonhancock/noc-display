@@ -1,91 +1,53 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-  <meta charset='utf-8'>
+    <head>
+        <title>noc-display</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/overrides.css" />
+    </head>
 
-  <title>jasonhancock/noc-display @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #b0a6ac;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #4f5953; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #4f5953; }
-    h3 { text-align: center; color: #4f5953; }
-    a { color: #4f5953; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/jasonhancock/noc-display"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/jasonhancock/noc-display/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/jasonhancock/noc-display/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+    <body>
+    <div class="navbar navbar-fixed-top" >
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="http://jasonhancock.github.com/noc-display">noc-display</a>
+        </div>
+      </div>
     </div>
+    <div class="container">
+        <div class="content">
+            <div class="hero-unit" align="center">
+                <h1>noc-display</h1>
+                <p>A rotating display of iframes like you might find in a
+                network operations center. Powered by <a href="http://bartaz.github.com/impress.js">impress.js.</a></p>
+                <p>
+                    <a href="demo.html" class="btn btn-primary"><i class="icon-eye-open icon-white"></i> Live Demo</a>
+                    <a href="https://github.com/jasonhancock/noc-display/tarball/master" class="btn btn-primary"><i class="icon-download icon-white"></i> Download .tar.gz</a>
+                    <a href="https://github.com/jasonhancock/noc-display/zipball/master" class="btn btn-primary"><i class="icon-download icon-white"></i> Download .zip</a>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <h3>License</h3>
+                    <p><a href="http://bartaz.github.com/impress.js">impress.js.</a>
+                    is licensed under the MIT and GPL liceses.</p>
+                    <p>noc-display is licensed under the MIT license.</p>
+                </div>
+                <div class="span4">
+                    <h3>Download</h3>
+                    <p>Grab a <a href="https://github.com/jasonhancock/noc-display/zipball/master">zip archive</a>
+                    or a <a href="https://github.com/jasonhancock/noc-display/tarball/master">gzipped tarball</a>
+                    from GitHub.<p>
+                </div>
+                <div class="span4">
+                    <h3>Contribute</h3>
+                    <p>Fork the <a href="https://github.com/jasonhancock/noc-display">repository</a>,
+                    commit your changes, send a pull request. Thanks!</p>
+                </div>
+            </div>
+        </div> <!-- content -->
 
-    <h1><a href="https://github.com/jasonhancock/noc-display">noc-display</a>
-      <span class="small">by <a href="https://github.com/jasonhancock">jasonhancock</a></span></h1>
-
-    <div class="description">
-      Rotating display of web pages like you might find in a NOC. Powered by impress.js
-    </div>
-
-    
-
-    
-
-    
-
-    
-      <h2>License</h2>
-      <p>MIT License</p>
-    
-
-    
-      <h2>Authors</h2>
-      <p>Jason Hancock (jsnbyh@gmail.com)<br/>      </p>
-    
-
-    
-      <h2>Contact</h2>
-      <p>Jason Hancock (jsnbyh@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/jasonhancock/noc-display/zipball/master">zip</a> or
-      <a href="https://github.com/jasonhancock/noc-display/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/jasonhancock/noc-display</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/jasonhancock/noc-display">jasonhancock/noc-display</a>
-    </div>
-
-  </div>
+    </div><!-- container -->
 
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -95,6 +57,7 @@ document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.
 try {
 var pageTracker = _gat._getTracker("UA-16833526-4");
 pageTracker._trackPageview();
-} catch(err) {}</script>"
+} catch(err) {}</script>
 </body>
+
 </html>
