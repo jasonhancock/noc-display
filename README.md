@@ -5,6 +5,11 @@ and uses impress.js to move between the iframes. Each iframe is reloaded before
 being displayed. The goal was to build a cool animated display that you might
 find on the wall in a network operations center (NOC).
 
+DEMO:
+-----
+
+Check out the live deomonstration [here](http://jasonhancock.github.com/noc-display/).
+
 LICENSE:
 --------
 impress.js is licensed under the MIT and GPL licenses. See
