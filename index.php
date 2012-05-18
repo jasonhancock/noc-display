@@ -10,6 +10,10 @@ $offset_y = 2 * $config['frm_height'];
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
+    <?php 
+    if($config['refresh_interval'] != 0)
+        printf('<meta http-equiv="refresh" content="%d" />', $config['refresh_interval']);
+    ?>
     <title>Display</title>
     
     <link href="css/noc-display.css" rel="stylesheet" />

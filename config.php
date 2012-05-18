@@ -24,4 +24,6 @@ return array(
         'http://cnn.com',
         'http://slashdot.org'
     ),
+    'refresh_interval' => 0,       // How often to refresh the main page, in 
+                                   // seconds. Set to 0 to disable
 );
